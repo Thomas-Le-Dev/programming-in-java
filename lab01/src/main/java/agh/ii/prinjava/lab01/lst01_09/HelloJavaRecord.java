@@ -18,8 +18,12 @@ package agh.ii.prinjava.lab01.lst01_09;
  * @see <a href="https://docs.oracle.com/en/java/javase/16/language/records.html">Record Classes</a>
  * @since Java 14
  */
-public record HelloJavaRecord(int i1, String s1) {
-    public static void sm1() {
-        System.out.println("HelloImmutable.sm1()");
+
+
+public class HelloJavaRecord {
+    public record HelloJavaRecord(int i1, String s1) {
+        public static void sm1 () {
+            System.out.println("HelloImmutable.sm1()");
+        }
     }
 }
